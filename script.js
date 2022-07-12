@@ -224,7 +224,7 @@ if (height) {
 
 
 // switch case
-const day = 'monday'
+const day = 'wednesday'
 switch (day) {
     case 'monday':
         console.log('kab aa rha hai ');
@@ -238,4 +238,18 @@ switch (day) {
     default:
         console.log('not a valid day');
 
+}
+
+
+// if else statement
+if (day === 'monday') {
+    console.log('go to codding meetup');
+} else if (day === 'tuesday') {
+    console.log('hey bhai!')
+} else if (day === 'wednesday') {
+    console.log('hey satish');
+} else if (day === 'thurday') {
+    console.log('hey ashish');
+} else {
+    console.log('not a valid day');
 }
