@@ -217,7 +217,25 @@ if (height) {
 
 // logical operator
 
-const hasDriversLicense = true;
-const hasGoodVision = false;
-console.log(hasDriversLicense && hasGoodVision);
-console.log(hasDriversLicense || hasGoodVision);
+// const hasDriversLicense = true;
+// const hasGoodVision = false;
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+
+
+// switch case
+const day = 'monday'
+switch (day) {
+    case 'monday':
+        console.log('kab aa rha hai ');
+        break;
+    case 'tuesday':
+        console.log('kab aayega');
+        break;
+    case "wednesday":
+        console.log('kab tak aayega');
+        break;
+    default:
+        console.log('not a valid day');
+
+}
