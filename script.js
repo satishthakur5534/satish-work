@@ -242,14 +242,41 @@ switch (day) {
 
 
 // if else statement
-if (day === 'monday') {
-    console.log('go to codding meetup');
-} else if (day === 'tuesday') {
-    console.log('hey bhai!')
-} else if (day === 'wednesday') {
-    console.log('hey satish');
-} else if (day === 'thurday') {
-    console.log('hey ashish');
+// if (day === 'monday') {
+//     console.log('go to codding meetup');
+// } else if (day === 'tuesday') {
+//     console.log('hey bhai!')
+// } else if (day === 'wednesday') {
+//     console.log('hey satish');
+// } else if (day === 'thurday') {
+//     console.log('hey ashish');
+// } else {
+//     console.log('not a valid day');
+// }
+
+
+
+//statement 
+
+// const me = 'jonas';
+// if (23 > 21) {
+//     console.log("this is true");
+// }
+
+
+
+//conditional (ternary) operator
+
+const age = 30;
+age >= 18 ? console.log('I like to drink wine🍷') :
+    console.log('I like to drink water💧');
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+if (age >= 10) {
+    drink2 = "wine";
 } else {
-    console.log('not a valid day');
+    drink2 = "water"
 }
+console.log(drink2);
