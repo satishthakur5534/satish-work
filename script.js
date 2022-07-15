@@ -267,16 +267,30 @@ switch (day) {
 
 //conditional (ternary) operator
 
-const age = 30;
-age >= 18 ? console.log('I like to drink wine🍷') :
-    console.log('I like to drink water💧');
+// const age = 15;
+// age >= 18 ? console.log('I like to drink wine🍷') :
+//     console.log('I like to drink water💧');
 
-const drink = age >= 18 ? 'wine' : 'water';
-console.log(drink);
+// const drink = age >= 18 ? 'wine' : 'water';
+// console.log(drink);
 
-if (age >= 10) {
-    drink2 = "wine";
-} else {
-    drink2 = "water"
-}
-console.log(drink2);
+// if (age >= 10) {
+//     drink2 = "wine";
+// } else {
+//     drink2 = "water"
+// }
+// console.log(drink2);
+
+
+// console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+
+
+// coding challenge
+const bill = 275;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
+
+const bill = 430;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
