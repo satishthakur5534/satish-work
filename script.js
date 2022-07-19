@@ -291,17 +291,18 @@ switch (day) {
 // console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
 
 
-const bill = 430;
-const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+// const bill = 430;
+// const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+// console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
 
 
 
-// Function
+// // Function
 
 
 function satish() {
     console.log('my name is ashish');
+
 }
 
 satish();
@@ -309,3 +310,22 @@ satish();
 satish();
 satish();
 satish();
+
+//   function decalration 
+
+function calcAge1(birthYear) {
+    const age = 2037 - birthYear;
+    return age;
+}
+const age1 = calcAge1(1991);
+console.log(age1)
+
+
+// function experssions
+
+const calcAge2 = function(birthYear) {
+    return 2037 - birthYear;
+
+}
+const age2 = calcAge2(1991);
+console.log(age1, age2);
