@@ -377,3 +377,22 @@ for (let i = 0; i <= 5; i++) {
     console.log("i love javascript");
 
 }
+
+
+// while loop
+
+let i = 1,
+    n = 4;
+while (i <= 4) {
+    console.log(i);
+    i += 1;
+}
+
+// do while
+
+let a = 1;
+const m = 5;
+do {
+    console.log(i);
+    i += 1;
+} while (i <= 5);
