@@ -224,21 +224,21 @@ if (height) {
 
 
 // switch case
-const day = 'wednesday'
-switch (day) {
-    case 'monday':
-        console.log('kab aa rha hai ');
-        break;
-    case 'tuesday':
-        console.log('kab aayega');
-        break;
-    case "wednesday":
-        console.log('kab tak aayega');
-        break;
-    default:
-        console.log('not a valid day');
+// const day = 'wednesday'
+// switch (day) {
+//     case 'monday':
+//         console.log('kab aa rha hai ');
+//         break;
+//     case 'tuesday':
+//         console.log('kab aayega');
+//         break;
+//     case "wednesday":
+//         console.log('kab tak aayega');
+//         break;
+//     default:
+//         console.log('not a valid day');
 
-}
+// }
 
 
 // if else statement
@@ -297,35 +297,83 @@ switch (day) {
 
 
 
-// // Function
+// // // Function
 
 
-function satish() {
-    console.log('my name is ashish');
+// function satish() {
+//     console.log('my name is ashish');
 
-}
+// }
 
-satish();
-satish();
-satish();
-satish();
-satish();
+// satish();
+// satish();
+// satish();
+// satish();
+// satish();
 
-//   function decalration 
+// //   function decalration 
 
-function calcAge1(birthYear) {
-    const age = 2037 - birthYear;
-    return age;
-}
-const age1 = calcAge1(1991);
-console.log(age1)
+// function calcAge1(birthYear) {
+//     const age = 2037 - birthYear;
+//     return age;
+// }
+// const age1 = calcAge1(1991);
+// console.log(age1)
 
 
 // function experssions
 
-const calcAge2 = function(birthYear) {
-    return 2037 - birthYear;
+// const calcAge2 = function(birthYear) {
+//     return 2037 - birthYear;
+
+// }
+// const age2 = calcAge2(1991);
+// console.log(age1, age2);
+
+// IF else statement
+
+const number = prompt("enter the number");
+if (number > 0) {
+    console.log("the number is positive");
+}
+console.log("the if d");
+
+check
+if the number
+if positive, negative or zero
+const number = prompt("Enter a number: ");
+
+
+// check if number is greater than 0
+if (number > 0) {
+    console.log("The number is positive");
+}
+// check if number is 0
+else if (number == 10) {
+    console.log("The number is 0");
+}
+// if number is neither greater than 0, nor zero
+else {
+    console.log("The number is negative");
+}
+
+console.log("The if...else if...else statement is easy");
+
+
+//  for practice
+
+const number1 = 2;
+if (number1 > 10) {
+    console.log("the number is positive")
+} else {
+    console.log("the number is negative or zero");
 
 }
-const age2 = calcAge2(1991);
-console.log(age1, age2);
+
+for loop
+
+const n = 5;
+for (let i = 0; i <= 5; i++) {
+    console.log("i love javascript");
+
+}
