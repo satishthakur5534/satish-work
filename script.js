@@ -484,7 +484,7 @@ if (height) {
 // }
 // satish();
 
-// // local scope
+// local scope
 
 // let b = 'hello';
 
@@ -497,11 +497,48 @@ if (height) {
 
 // local scopes
 
-let c = "hello";
-let d = "world";
+// let c = "hello";
+// let d = "world";
 
-function ashish() {
-    let d = "world";
+// function ashish() {
+//     let d = "world";
+// }
+// console.log(c + " " + d);
+// ashish();
+
+// hoisting 
+// var test;
+// console.log(test);
+
+// Variable Hoisting
+// In terms of variables and constants, keyword var is hoisted and let and const does not allow hoisting.
+
+
+// a = 5;
+// console.log(a)
+
+
+// var a;
+// console.log(a);
+// a = 50;
+
+var a = 7;
+// var b;  there is not define var b
+// function greet() {
+//     b = "helloworld";
+//     console.log(b);
+//     var b;
+
+// }
+// greet();
+// console.log(b);
+
+
+// function hoisting
+
+
+greet1();
+
+function greet1() {
+    console.log('hi, there');
 }
-console.log(c + " " + d);
-ashish();
