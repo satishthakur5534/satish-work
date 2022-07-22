@@ -332,67 +332,176 @@ if (height) {
 
 // IF else statement
 
-const number = prompt("enter the number");
-if (number > 0) {
-    console.log("the number is positive");
-}
-console.log("the if d");
+// const number = prompt("enter the number");
+// if (number > 0) {
+//     console.log("the number is positive");
+// }
+// console.log("the if d");
 
-check
-if the number
-if positive, negative or zero
-const number = prompt("Enter a number: ");
-
-
-// check if number is greater than 0
-if (number > 0) {
-    console.log("The number is positive");
-}
-// check if number is 0
-else if (number == 10) {
-    console.log("The number is 0");
-}
-// if number is neither greater than 0, nor zero
-else {
-    console.log("The number is negative");
-}
-
-console.log("The if...else if...else statement is easy");
+// check
+// if the number
+// if positive, negative or zero
+// const number = prompt("Enter a number: ");
 
 
-//  for practice
+// // check if number is greater than 0
+// if (number > 0) {
+//     console.log("The number is positive");
+// }
+// // check if number is 0
+// else if (number == 10) {
+//     console.log("The number is 0");
+// }
+// // if number is neither greater than 0, nor zero
+// else {
+//     console.log("The number is negative");
+// }
 
-const number1 = 2;
-if (number1 > 10) {
-    console.log("the number is positive")
-} else {
-    console.log("the number is negative or zero");
+// console.log("The if...else if...else statement is easy");
 
-}
 
-for loop
+// //  for practice
 
-const n = 5;
-for (let i = 0; i <= 5; i++) {
-    console.log("i love javascript");
+// const number1 = 2;
+// if (number1 > 10) {
+//     console.log("the number is positive")
+// } else {
+//     console.log("the number is negative or zero");
 
-}
+// }
+
+// for loop
+
+// const n = 5;
+// for (let i = 0; i <= 5; i++) {
+//     console.log("i love javascript");
+
+// }
 
 
 // while loop
 
-let i = 1,
-    n = 4;
-while (i <= 4) {
-    console.log(i);
-    i += 1;
+// let i = 1,
+//     n = 4;
+// while (i <= 4) {
+//     console.log(i);
+//     i += 1;
+// }
+
+// // do while
+
+// let a = 1;
+// const m = 5;
+// do {
+//     console.log(i);
+//     i += 1;
+// } while (i <= 5);
+
+// // break statement
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+//     if (i == 5)
+//         break;
+// }
+
+
+
+// let sum = 0;
+// const number = 0;
+// while (number >= 0) {
+
+//     sum += number;
+//     number = parseInt(prompt('enter the number'));
+//     if (isNaN(number)) {
+//         console.log('you enterd a string');
+//         number = 0;
+//         continue;
+//     }
+// }
+// console.log(`the sum is ${sum}`);
+
+
+// nested for loop
+
+
+// let i = 5,
+//     j = 8;
+// for (let i = 1; i <= 5; i++) {
+//     for (let j = 1; j <= 8; j++) {
+//         if (i == 2) {
+//             continue;
+//         }
+//         console.log(`i=${i}, j=${j}`);
+//     }
+
+// }
+
+
+// // switch case 
+
+// const day = "Monday";
+// switch (day) {
+//     case "Monday":
+//         console.log("Sunday");
+//         break;
+//         // case 1:
+//         //     day = "Monday";
+//         //     break;
+//         // case 2:
+//         //     day = "Tuesday";
+//         //     break;
+//         // case 3:
+//         //     day = "Wednesday";
+//         //     break;
+//         // case 4:
+//         //     day = "Thursday";
+//         //     break;
+//         // case 5:
+//         //     day = "Friday";
+//         //     break;
+//         // case 6:
+//         //     day = "Saturday";
+// }
+// console.log("not a valid day");
+
+
+// function add(a, b) {
+//     return a + b;
+// }
+// let number1 = parseInt(prompt("enter one number");
+//         let number2 = parseInt(prompt("enter two number"));
+
+//         let result = add(number1, number2); console.log("the sum of + result");
+
+// global scops
+// A variable declared at the top of a program or outside of a function is considered a global scope variable.
+
+
+// let a = 'hello';
+
+// function satish() {
+//     console.log(a);
+// }
+// satish();
+
+// // local scope
+
+// let b = 'hello';
+
+// function greet() {
+//     b = 3;
+// }
+// greet();
+// console.log(b);
+// greet();
+
+// local scopes
+
+let c = "hello";
+let d = "world";
+
+function ashish() {
+    let d = "world";
 }
-
-// do while
-
-let a = 1;
-const m = 5;
-do {
-    console.log(i);
-    i += 1;
-} while (i <= 5);
+console.log(c + " " + d);
+ashish();
