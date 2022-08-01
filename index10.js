@@ -406,27 +406,27 @@
 
 // splice ka work value ko add karta hai
 
-var arr = ["rahul", "karan", "satish"];
-arr.splice(2, 0, "rehmann", "manish");
-console.log(arr);
+// var arr = ["rahul", "karan", "satish"];
+// arr.splice(2, 0, "rehmann", "manish");
+// console.log(arr);
 
 // isArray 
 
-var a = ["satish", "ashish"];
-// var a = 10;                   this is for example what this is an arry or not?
-var b = Array.isArray(a);
-if (Array.isArray(a)) {
-    console.log("this is an arry");
-} else {
-    console.log("this is not an array");
-}
-console.log(b);
+// var a = ["satish", "ashish"];
+// // var a = 10;                   this is for example what this is an arry or not?
+// var b = Array.isArray(a);
+// // if (Array.isArray(a)) {
+//     console.log("this is an arry");
+// } else {
+//     console.log("this is not an array");
+// }
+// console.log(b);
 
-// index of array
+// // index of array
 
-var a = ["aman", "salman", "rahul", "kajal"];
-var b = a.indexOf("kajal", 0);
-console.log(b);
+// var a = ["aman", "salman", "rahul", "kajal"];
+// var b = a.indexOf("kajal", 0);
+// console.log(b);
 /// yha par ham perametre mai jha se index ka number dalte hai wha se hi wo check kar ke batata hai ki hamara value index kha hai
 // var a = ["aman", "salman", "kajal", "rahul", "kajal"];
 // var b = a.indexOf("kajal", 1); yha par maine indecx number dala hua hai <===like this 
@@ -440,6 +440,117 @@ console.log(b);
 // console.log(b);
 
 // include  array
-var a = ["satish", "ajmal", "akshita", "anakshi"];
-var b = a.includes("akshita");
-console.log(b)
+// include function main ham search kar sakte hai ki hamara value exist karta hai ki nhi
+// var a = ["satish", "ajmal", "akshita", "anakshi"];
+// var b = a.includes("akshita");
+// console.log(b);
+
+// some function 
+var a = [10, 12, 13, 15, 18, 20];
+var b = a.some(checkAdults);
+
+function checkAdults(ages) {
+    return ages >= 15;
+
+}
+console.log(b);
+
+// every function
+// yha par every function main jo age daali hai uske barabar ho ya badi ho tabhi sahi ho // sabhi values ko check karta hai uske baad value return karta hai 
+var a = [16, 17, 19, 15, 18, 20];
+var b = a.every(checkAdults);
+
+function checkAdults(ages) {
+    return ages >= 15;
+
+}
+console.log(b);
+
+// find function
+
+var age = [10, 12, 18, 20];
+var b = age.find(checkAdults);
+
+function checkAdults(age) {
+    return age >= 18;
+
+}
+console.log(b);
+
+
+// findindex function
+
+var age = [10, 19, 20, 23];
+var b = age.findIndex(checkAdults);
+
+function checkAdults(age) {
+    return age > 18;
+
+}
+console.log(b);
+
+
+// find filter 
+var age = [10, 15, 20, 25, 30];
+var b = age.filter(checkAdults);
+
+function checkAdults(age) {
+    return age >= 15;
+
+}
+console.log(b);
+
+
+// toString
+
+// string banane kai liye
+
+var a = ["satish", "ashish", "manish"];
+a.toString();
+console.log(a);
+
+// value of function
+// value of function working as array
+var a = ["ashish", "satish", "ram"];
+console.log(a.valueOf());
+
+// fill function
+// isme hum koi bhi value input karwa sakte hai jo array apn ne likha hai uski jagh par 
+var a = ["santa", "banta", "kanta"];
+a.fill("Ram");
+console.log(a);
+
+
+// forEach function
+// basiclly iska work single single line main karna hota hai 
+
+let arr = ["satish", "ashish", "rahul"];
+arr.forEach(function(value) {
+    console.log(value);
+});
+
+// forEach and index\
+
+let arr1 = ["satish", "satish", "ashish"];
+arr1.forEach(function(value, index) {
+    console.log(index + " : " + value);
+});
+
+// object 
+// Object ki nishanii hoti hai curly braces :
+
+var a = {
+    fname: "satish",
+    lname: "thakur",
+    age: 20,
+    email: "satishthakur5534.com",
+    favMovie: ["satish", "ashish"],
+    salary: function() {
+        return 25000;
+
+    }
+
+}
+console.log(a);
+console.log(a.favMovie[1]);
+console.log(a.salary());
