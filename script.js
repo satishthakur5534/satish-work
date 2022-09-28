@@ -507,8 +507,8 @@ if (height) {
 // ashish();
 
 // hoisting 
-// var test;
-// console.log(test);
+var test;
+console.log(test);
 
 // Variable Hoisting
 // In terms of variables and constants, keyword var is hoisted and let and const does not allow hoisting.
@@ -522,8 +522,8 @@ if (height) {
 // console.log(a);
 // a = 50;
 
-var a = 7;
-// var b;  there is not define var b
+// var a = 7;
+// // var b;  there is not define var b
 // function greet() {
 //     b = "helloworld";
 //     console.log(b);
@@ -536,9 +536,46 @@ var a = 7;
 
 // function hoisting
 
+// In the above program, the function greet is called before declaring it and the program shows the output. This is due to hoisting.
+// greet1();
 
-greet1();
+// function greet1() {
+//     console.log('hi, there');
+// }
 
-function greet1() {
-    console.log('hi, there');
+
+
+
+
+// Recursion is a process of calling itself. A function that calls itself is called a recursive function.
+
+function countDown(number) {
+    console.log(number);
+    const newNumber = number - 1;
+    if (number > 1) {
+        countDown(newNumber);
+    }
+}
+countDown(10);
+
+
+
+
+
+// Recursion 
+
+// program to find the factorial of a number
+
+
+function factorial(x) {
+    if (x === 0) {
+        return 1;
+    } else {
+        return x * (x - 1);
+    }
+}
+const num = 3;
+if (num > 0) {
+    let result = factorial(num);
+    console.log(`The factorial of ${num} is ${result}`);
 }
